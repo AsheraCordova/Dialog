@@ -1,0 +1,9 @@
+
+._plugin.xml
+
+._.gitignore
+
+src/android/._CallbackProgressDialog.java
+
+src/android/._SpinnerDialog.java
+/bin/
