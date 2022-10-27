@@ -38,7 +38,7 @@ backdropColor                     | Color of backdrop.
 android:backgroundDimEnabled      | Back drop will be disabled
 marginPercent                     | Percentage of margin around the dialog.
 
-Dialog Theming:
+### Dialog Theming
 
 The following snippet shows the configuration for different kinds of dialog:
 ```
