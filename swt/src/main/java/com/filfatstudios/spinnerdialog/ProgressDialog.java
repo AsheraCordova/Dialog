@@ -148,8 +148,8 @@ public class ProgressDialog {
 	}
 
 	private void updateBounds() {
-		int y = parent.getBounds().height - parent.getClientArea().height;
-		panel.setBounds(parent.getLocation().x + 10, parent.getLocation().y + y - 4,
+		int borderSize = 2;
+		panel.setBounds(parent.toDisplay(0, 0).x + borderSize, parent.toDisplay(0, 0).y + borderSize,
 				com.ashera.widget.PluginInvoker.getScreenWidth(), com.ashera.widget.PluginInvoker.getScreenHeight());
 		
 		int panelWidth = panel.getBounds().width;
