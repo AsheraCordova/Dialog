@@ -21,7 +21,7 @@ public class SpinnerDialog extends org.apache.cordova.CordovaPlugin {
 			final boolean isFixed = (boolean) args.get(2);
 			System.out.println(title + " " + message + " " + isFixed);
 
-			Shell shell = org.eclipse.swt.widgets.Display.getDefault().getShells()[0];
+			Shell shell = com.ashera.common.ShellManager.getInstance().getActiveShell();
 			ProgressDialog p = new ProgressDialog(shell, title, message, isFixed);
 			spinnerDialogStack.push(p);
 			p.show();

@@ -150,8 +150,8 @@ public class ProgressDialog {
 	private void updateBounds() {
 		int borderSize = 0;
 		panel.setBounds(parent.toDisplay(0, 0).x + borderSize, parent.toDisplay(0, 0).y + borderSize,
-				com.ashera.widget.PluginInvoker.getScreenWidth(), com.ashera.widget.PluginInvoker.getScreenHeight());
-		
+				parent.getClientArea().width, parent.getClientArea().height);
+
 		int panelWidth = panel.getBounds().width;
 		int panelHeight = panel.getBounds().height;
 		opaquePanel.setBounds(panel.getLocation().x + (panelWidth - progressBarContainer.getBounds().width) / 2,
