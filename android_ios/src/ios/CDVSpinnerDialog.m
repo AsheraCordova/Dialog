@@ -86,9 +86,18 @@
     green = [command argumentAtIndex:5];
     blue = [command argumentAtIndex:6];
     
-    UIViewController *rootViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    if (alpha == nil) {
+    	alpha = @"0.40";
+    }
     
-    [rootViewController.view addSubview:self.overlay];
+    UIViewController *rootViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    UIViewController* presentedController = rootViewController;
+		
+	while (presentedController.presentedViewController != nil) {
+		presentedController = presentedController.presentedViewController;
+	}
+    
+    [presentedController.view addSubview:self.overlay];
     
 }
 
