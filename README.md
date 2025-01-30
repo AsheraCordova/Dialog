@@ -2,16 +2,16 @@
 
 Dialog project add support for dialogs.
 
-Important Links:
-
-https://asheracordova.github.io/
-
-https://asheracordova.github.io/doc/help-doc.html
-
+## Installation
 To install the plugin use:
 ```
 cordova plugin add https://github.com/AsheraCordova/Dialog.git
 ```
+
+## Important Links
+https://asheracordova.github.io/
+
+https://asheracordova.github.io/doc/help-doc.html
 
 ## How to create a dialog
 
